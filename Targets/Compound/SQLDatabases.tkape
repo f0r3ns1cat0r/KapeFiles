@@ -1,9 +1,18 @@
 Description: SQLDatabases Target for use with SQLECmd Module
 Author: Andrew Rathbun
-Version: 1.1
+Version: 1.3
 Id: 61d2909c-dcf2-481f-9169-53ea0c2455ba
 RecreateDirectories: true
 Targets:
+
+# Apps - 4K Video Downloader - 4KVideoDownloader.tkape
+
+    -
+        Name: 4K Video Downloader
+        Category: SQLDatabases
+        Path: C:\Users\%user%\AppData\Local\4kdownload.com\4K Video Downloader\4K Video Downloader
+        FileMask: "*.sqlite"
+        Comment: "Grabs database(s) that stores user download history"
 
 # Apps - Microsoft OneNote - MicrosoftOneNote.tkape
 
@@ -146,7 +155,7 @@ Targets:
         Name: Google File Stream Metadata
         Category: SQLDatabases
         Path: C:\Users\%user%\AppData\Local\Google\Drive\*\TempData\*\change_buffer\
-        Recursive: True
+        Recursive: true
         Comment: "DB(s) with seemingly randomized filename(s) that track file system changes within Google Drive"
     -
         Name: Google File Stream Metadata
@@ -556,6 +565,28 @@ Targets:
         Category: OS Upgrade
         Path: C:\ProgramData\USOPrivate\UpdateStore
         FileMask: store.db
+
+# Windows - Bitdefender Antivirus - Bitdefender.tkape
+    -
+        Name: Bitdefender SQLite DB Files
+        Category: Antivirus
+        Path: C:\Program Files*\Bitdefender*\
+        Recursive: true
+        FileMask: regex:*.+\.(db|db-wal|db-shm)
+        Comment: "Bitdefender SQLite databases"
+
+# Windows - EventTranscript.db - EventTranscriptDB.tkape
+
+    -
+        Name: EventTranscript.db
+        Category: SystemEvents
+        Path: C:\ProgramData\Microsoft\Diagnosis\EventTranscript
+        FileMask: 'EventTranscript.db*'
+    -
+        Name: EventTranscript.db
+        Category: SystemEvents
+        Path: C:\Windows.old\ProgramData\Microsoft\Diagnosis\EventTranscript
+        FileMask: 'EventTranscript.db*'
 
 # Documentation
 # This Target is meant to pull all SQLite databases for which there are currently (or soon will be) SQLECmd Maps - https://github.com/EricZimmerman/SQLECmd/tree/master/SQLMap/Maps
