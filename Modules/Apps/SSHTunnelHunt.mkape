@@ -3,7 +3,7 @@ Category: Apps
 Author: Aashiq Ahmed
 Version: 1.0
 Id: 3a5b2f54-2b1d-4c7a-9a9e-6c7d52b7a8a1
-BinaryUrl: https://github.com/EricZimmerman/KapeFiles
+BinaryUrl: https://raw.githubusercontent.com/cyber20233/SSHCommandHunt/main/SSHCommandHunt.ps1
 ExportFormat: csv
 
 Processors:
