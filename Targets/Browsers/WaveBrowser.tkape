@@ -1,7 +1,7 @@
 Description: WaveBrowser
-Author: Kalil Olsen
-Version: 1.0
-Id: 8a6987d1-2688-4b12-b9cc-386db9b5bed9
+Author: Kalil Olsen, Yogesh Khatri
+Version: 1.1
+Id: 6bf9a2c9-7ab4-4041-b90c-95140a128bea
 RecreateDirectories: true
 Targets:
     -
@@ -85,6 +85,11 @@ Targets:
         Category: Communications
         Path: C:\Users\%user%\AppData\Local\WaveBrowser\User Data\*\
         FileMask: Preferences
+    -
+        Name: WaveBrowser Secure Preferences
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\WaveBrowser\User Data\*\
+        FileMask: Secure Preferences
     -
         Name: WaveBrowser Quota Manager
         Category: Communications

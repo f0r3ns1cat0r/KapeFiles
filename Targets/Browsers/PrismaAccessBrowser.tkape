@@ -1,7 +1,7 @@
 Description: Prisma Access Browser
-Author: Cassie Doemel and Andrew Rathbun
-Version: 1.0
-Id: 45ad9cbd-a4fa-4221-8f99-a68982564f56
+Author: Cassie Doemel and Andrew Rathbun, Yogesh Khatri
+Version: 1.1
+Id: 9a92253a-8406-4f09-86b3-1af4eb4d8f03
 RecreateDirectories: true
 Targets:
     -
@@ -155,6 +155,11 @@ Targets:
         Category: Communications
         Path: C:\Users\%user%\AppData\Local\Palo Alto Networks\PrismaAccessBrowser\User Data\*\
         FileMask: Preferences
+    -
+        Name: Prisma Access Browser Secure Preferences
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Palo Alto Networks\PrismaAccessBrowser\User Data\*\
+        FileMask: Secure Preferences
     -
         Name: Prisma Access Browser Quota Manager
         Category: Communications

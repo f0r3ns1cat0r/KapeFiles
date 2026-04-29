@@ -1,7 +1,7 @@
 Description: Chromium
-Author: Eric Zimmerman, Andrew Rathbun, Hernan Filannino, Reece394
-Version: 1.0
-Id: 048a5b61-1624-4c2d-9754-37972fd3921d
+Author: Eric Zimmerman, Andrew Rathbun, Hernan Filannino, Reece394, Yogesh Khatri
+Version: 1.1
+Id: 2ee88646-23ec-4926-8ba5-7ed0ed18622e
 RecreateDirectories: true
 Targets:
     -
@@ -160,6 +160,11 @@ Targets:
         Category: Communications
         Path: C:\Users\%user%\AppData\Local\Chromium\User Data\*\
         FileMask: Preferences
+    -
+        Name: Chromium Secure Preferences
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Chromium\User Data\*\
+        FileMask: Secure Preferences
     -
         Name: Chromium Quota Manager
         Category: Communications

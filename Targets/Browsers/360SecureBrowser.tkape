@@ -1,7 +1,7 @@
 Description: 360 Secure Browser
-Author: Reece394
-Version: 1.0
-Id: c7cedaf5-e952-48ec-909e-c2aac1f66abc
+Author: Reece394, Yogesh Khatri
+Version: 1.1
+Id: 243c9a21-3b4a-48b8-9fc7-740f36f2ea37
 RecreateDirectories: true
 Targets:
     -
@@ -86,6 +86,11 @@ Targets:
         Category: Communications
         Path: C:\Users\%user%\AppData\Roaming\360se6\User Data\*\
         FileMask: Preferences
+    -
+        Name: 360 Secure Browser Secure Preferences
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Roaming\360se6\User Data\*\
+        FileMask: Secure Preferences
     -
         Name: 360 Secure Browser Quota Manager
         Category: Communications

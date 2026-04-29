@@ -1,7 +1,7 @@
 Description: Supermium
-Author: Reece394
-Version: 1.0
-Id: 489db515-48e5-48f1-b6ee-9fdddf51a331
+Author: Reece394, Yogesh Khatri
+Version: 1.1
+Id: 0f708588-d35a-42ed-a22a-d0fd163dccae
 RecreateDirectories: true
 Targets:
     -
@@ -190,6 +190,11 @@ Targets:
         Category: Communications
         Path: C:\Users\%user%\AppData\Local\Supermium\User Data\*\
         FileMask: Preferences
+    -
+        Name: Supermium Secure Preferences
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Supermium\User Data\*\
+        FileMask: Secure Preferences
     -
         Name: Supermium Quota Manager
         Category: Communications

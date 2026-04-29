@@ -1,7 +1,7 @@
 Description: Arc Browser
-Author: Reece394
-Version: 1.0
-Id: f094335b-ec3c-4be8-9f80-e74e758da16e
+Author: Reece394, Yogesh Khatri
+Version: 1.1
+Id: 86e7a6bd-0c5b-47f8-bd38-5bafcb8dcae5
 RecreateDirectories: true
 Targets:
     -
@@ -39,6 +39,11 @@ Targets:
         Category: Communications
         Path: C:\Users\%user%\AppData\Local\Packages\TheBrowserCompany.Arc_ttt1ap7aakyb4\LocalCache\Local\Arc\User Data\*\
         FileMask: Preferences
+    -
+        Name: Arc Secure Preferences
+        Category: Communications
+        Path: C:\Users\%user%\AppData\Local\Packages\TheBrowserCompany.Arc_ttt1ap7aakyb4\LocalCache\Local\Arc\User Data\*\
+        FileMask: Secure Preferences
     -
         Name: Arc Shortcuts
         Category: Communications
