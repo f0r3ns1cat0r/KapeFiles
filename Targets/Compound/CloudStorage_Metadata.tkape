@@ -1,6 +1,6 @@
 Description: Cloud Storage Metadata
-Author: Chad Tilbury and Andrew Rathbun, Eric Capuano
-Version: 1.2
+Author: Chad Tilbury and Andrew Rathbun, Eric Capuano, Szymon Andrzejewski
+Version: 1.3
 Id: 136ca523-2f99-4203-bd66-6aa50fe8d3a8
 RecreateDirectories: true
 Targets:
@@ -32,6 +32,10 @@ Targets:
         Name: FreeFileSync
         Category: Apps
         Path: FreeFileSync.tkape
+    -
+        Name: Kopia config file
+        Category: Apps
+        Path: Kopia.tkape
 
 # Documentation
 # For those looking to contribute to this list, check here for ideas: https://en.wikipedia.org/wiki/Comparison_of_online_backup_services.
